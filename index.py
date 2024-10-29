@@ -6,7 +6,7 @@ st.title("AI大模型应用产品网")
 col,col1 = st.columns(2)
 #
 with col:
-    st.image("https://c.cidianwang.com/file/shufa/kaishu/zhaomengfu/2016110142041725.gif",use_column_width=True)
+    st.image("https://c.cidianwang.com/file/shufa/kaishu/a01ea18ee7a64c09.gif",use_column_width=True)
     flag = st.button("绘言",use_container_width=True)
     if flag:
         st.switch_page("pages/huiyan.py")
