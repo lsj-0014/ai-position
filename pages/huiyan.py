@@ -32,7 +32,7 @@ chain = LLMChain(
     prompt=prompt,
     memory=st.session_state.memory,
 )
-st.title("❀你的女朋友小瑶❀")
+st.title("❀小瑶❀")
 # 构建一个缓存，用来保存聊天记录
 if "cache" not in st.session_state:
     st.session_state.cache = []
@@ -43,7 +43,7 @@ else:
             st.write(message["content"])
 
 # 创建一个聊天输入框
-problem = st.chat_input("你女朋友的小瑶正在等待你的回应")
+problem = st.chat_input("小瑶正在等待你的回应")
 # 判断是用来确定用户有没有输入问题 如果输入问题
 if problem:
     # 1、将用户的问题输出到界面上，以用户的角色输出
