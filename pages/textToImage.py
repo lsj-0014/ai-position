@@ -15,7 +15,7 @@ else:
             st.write(message["content"])
         else:
             with st.chat_message(message['role']):
-             st.image(message["content"], width=300)
+                 st.image(message["content"], width=300)
 # 创建输入框
 desc = st.chat_input("请输入图片的描述")
 if desc:
