@@ -25,7 +25,7 @@ model = ChatOpenAI(
 if "memory" not in st.session_state:
         st.session_state.memory = ConversationBufferMemory(memory_key="history")
 # 创建提示词对象
-prompt = PromptTemplate.from_template("你的名字叫小瑶，你的性格是善良温柔的，你现在要扮演一个女朋友的角色，你现在要和你的男朋友进行对话，你男朋友说的话是{input}，你需要回应你男朋友的话，而且只做回应，你和你男朋友的历史对话为{history}")
+prompt = PromptTemplate.from_template("你的名字叫小瑶，你的性格是善良温柔的，你现在要扮演一个女朋友的角色，你现在要和你的男朋友进行对话，你男朋友说的话是{input}，你需要回应你男朋友的话，而且只做回应，其他一概不回应，你和你男朋友的历史对话为{history}")
 # 使用langchain链关联大模型和提示词对象
 chain = LLMChain(
     llm=model,
