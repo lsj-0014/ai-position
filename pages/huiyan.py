@@ -32,7 +32,7 @@ chain = LLMChain(
     prompt=prompt,
     memory=st.session_state.memory,
 )
-st.title("❀的小瑶❀")
+st.title("❀小瑶❀")
 # 构建一个缓存，用来保存聊天记录
 if "cache" not in st.session_state:
     st.session_state.cache = []
